@@ -1,0 +1,14 @@
+server:
+  port: 8085
+  
+zuul:
+  routes:
+   TrainSearchMicroservice:
+     url: http://localhost:8088 
+   Train_Booking_Service:
+     url: http://localhost:8081
+   AdminMicroservice:
+     url: http://localhost:8082
+   Userservice:
+     url: http://localhost:8084
+     

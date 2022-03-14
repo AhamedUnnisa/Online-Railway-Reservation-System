@@ -6,6 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
+
 @Document(collection = "Train")
 public class Train {
 	
@@ -19,6 +20,7 @@ public class Train {
 		this.endStation = endStation;
 	}
 	@Id
+
 	private String trainid;
 	private String trainName;
 	private String startStation;
